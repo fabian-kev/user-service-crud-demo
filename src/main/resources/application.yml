@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: sample-user-api
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+  datasource:
+    url: jdbc:h2:./h2/user-db;DB_CLOSE_ON_EXIT=FALSE;DB_CLOSE_DELAY=-1
+    username: h2
+    password: h2
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update #This will automatically create the tables based from the entities.
