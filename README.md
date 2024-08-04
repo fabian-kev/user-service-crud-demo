@@ -12,9 +12,11 @@ business layer), and repository testing. Remember this project is for demo purpo
 
 ## Project Structure
 
-This project uses layered and clean architecture(by Uncle Bob). `web` contains the controller which invokes the service.
+This project uses layered architecture and follows SOLID principle. `web` contains the controller which invokes the
+service.
 `service` contains the business logic, it depends only on abstraction or interface. No framework classes should be used
-in the service. Lastly, `repository` contains the persistence layer which communicates with the database.
+in the service. The service implementation should work even there is no database, framework or frontend that invokes it.
+Lastly, `repository` contains the persistence layer which communicates with the database.
 
 ## Postman collection
 
