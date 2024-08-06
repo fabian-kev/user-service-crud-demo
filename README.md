@@ -1,6 +1,6 @@
 # User Microservice CRUD sample
 
-## Dependencies
+## Prerequisites
 
 * Java 17
 
